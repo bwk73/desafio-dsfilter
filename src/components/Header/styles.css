@@ -1,0 +1,20 @@
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 23.5px 0;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dsf-color-font-primary);
+}
+
+nav h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dsf-color-font-primary);
+}

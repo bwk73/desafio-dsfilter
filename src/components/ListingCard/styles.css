@@ -1,0 +1,31 @@
+.dsf-lc-container{
+    max-width: 960px;
+    border-radius: 5px;
+    background-color: var(--dsf-color-bg-tertiary);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dsf-lc-content {
+    background-color: var(--dsf-color-bg-tertiary);
+    width: 920px;
+    height: 53px;
+    border-radius: 5px;
+    border: 1px solid var(--dsf-color-bg-primary);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.dsf-lc-content p {
+color: var(--dsf-color-font-tertiary);
+font-size: 12px;
+font-weight: 400;
+}
+
+.dsf-lc-content h6 {
+    color: var(--dsf-color-bg-primary);
+    font-size: 16px;
+    font-weight: 700;
+}

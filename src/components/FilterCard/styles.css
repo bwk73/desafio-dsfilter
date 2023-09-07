@@ -1,0 +1,33 @@
+.dsf-fc-container {
+    width: 960px;
+    height: 200px;
+    background-color: var(--dsf-color-bg-tertiary);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.dsf-fc-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dsf-fc-content input {
+    background-color: var(--dsf-color-bg-tertiary);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--dsf-color-font-secondary);
+    color: var(--dsf-color-font-secondary);
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.dsf-fc-content button {
+    background-color: var(--dsf-color-bg-primary);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--dsf-color-font-primary);
+    border: unset;
+    margin: 0 20px;
+}
