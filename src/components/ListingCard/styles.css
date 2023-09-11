@@ -1,11 +1,10 @@
 .dsf-lc-container{
     max-width: 960px;
-    border-radius: 5px;
     background-color: var(--dsf-color-bg-tertiary);
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .dsf-lc-content {
