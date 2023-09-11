@@ -1,13 +1,18 @@
+/* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import "./styles.css";
+
+type Props = {
+  onFilter: Function;
+}
 
 type FormData = {
   min?: number;
   max?: number;
 }
 
-export default function FilterCard() {
+export default function FilterCard({onFilter} : Props) {
 
   const [formData, setFormData] = useState<FormData>({});
 
@@ -19,8 +24,9 @@ export default function FilterCard() {
   
   function handleSubmit(event: any) {
     event.preventDefault();
-    console.log(formData.min || 0);
-    console.log(formData.max || Number.MAX_VALUE);
+    const min = formData.min || 0;
+    const max = formData.max || Number.MAX_VALUE;
+    onFilter(min, max);
   }
 
   return (
@@ -45,7 +51,7 @@ export default function FilterCard() {
           />
         </div>
         <div className="dsf-mt20">
-          <button type="submit">Filtrar</button>
+          <button type="submit" onClick={handleSubmit}>Filtrar</button>
         </div>
       </form>
     </div>

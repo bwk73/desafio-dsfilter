@@ -1,32 +1,18 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ProductDTO } from "../../models/product";
 import "./styles.css";
 
-export default function ListingCard() {
+type Props = {
+  product: ProductDTO;
+}
+
+export default function ListingCard({product}: Props) {
   return (
     <>
       <div className="dsf-lc-container">
         <div className="dsf-lc-content dsf-mt20">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
-        </div>
-        <div className="dsf-lc-content">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
-        </div>
-        <div className="dsf-lc-content">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
-        </div>
-        <div className="dsf-lc-content">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
-        </div>
-        <div className="dsf-lc-content">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
-        </div>
-        <div className="dsf-lc-content dsf-mb20">
-            <p>Pc Game Pro</p>
-            <h6>R$ 1200.00</h6>
+            <p>{product.name}</p>
+            <h6>R$ {product.price.toFixed(2)}</h6>
         </div>
       </div>
     </>
